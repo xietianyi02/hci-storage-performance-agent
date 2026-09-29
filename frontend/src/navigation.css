@@ -1,0 +1,25 @@
+.app-shell:not(.version-shell)>.sidebar{width:220px;padding:25px 16px 20px;background:#fff;color:#42556d;border-right:1px solid #e2e8ef;overflow-y:auto}
+.app-shell:not(.version-shell)>.main-shell{margin-left:220px}
+.sidebar-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:28px}
+.sidebar .brand{padding:0 10px;gap:11px;color:#19324f}
+.sidebar .brand-symbol{width:34px;height:34px;border-radius:9px;background:#eaf2ff;color:#326bd1;box-shadow:none}
+.sidebar .brand>div{font-size:18px;font-weight:700;line-height:1.1;letter-spacing:.3px}
+.sidebar .brand>div>span{font-size:11px;font-weight:400;letter-spacing:0;color:#6d7f94;margin-top:5px}
+.app-shell>.sidebar>nav{gap:5px}
+.sidebar .nav-item{width:100%;min-height:44px;padding:11px 13px;gap:11px;font-size:13px;color:#52647b;border-radius:8px}
+.sidebar .nav-item svg{width:17px;height:17px;color:#8493a5}
+.sidebar .nav-item:hover{background:#f3f6fb;color:#19324f}
+.sidebar .nav-item.selected{background:#eaf1ff;color:#275ec4;font-weight:600}
+.sidebar .nav-item.selected svg{color:inherit}
+.sidebar .nav-item.selected::before{display:none}
+.sidebar .nav-item:focus-visible{outline:2px solid #6a98ec;outline-offset:2px}
+.navigation-divider{height:1px;background:#e5ebf2;margin:16px 10px}
+.technical-navigation .navigation-divider{margin:7px 4px}
+.sidebar .sidebar-close{display:none}
+@media(max-width:800px){
+  .app-shell:not(.version-shell)>.sidebar{width:232px;padding:23px 16px 20px;visibility:hidden}
+  .app-shell:not(.version-shell)>.sidebar.sidebar-open{visibility:visible;box-shadow:12px 0 40px #14243e1f}
+  .app-shell:not(.version-shell)>.main-shell{margin-left:0}
+  .sidebar .sidebar-close{display:grid;color:#6c7f95}
+  .sidebar .brand{padding-left:8px}
+}
